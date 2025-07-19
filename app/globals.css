@@ -122,3 +122,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+.primary-hero {
+  background-color: #fdf8f3;
+}
+
+.primary-border {
+  @apply border-5 border-solid;
+  border-image-source: linear-gradient(
+    308.69deg,
+    #ff8629 63.74%,
+    #ffd729 92.78%
+  );
+  border-image-slice: 1;
+}
