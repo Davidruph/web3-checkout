@@ -5,7 +5,10 @@ import code from "../public/images/code.svg";
 
 const Developer = () => {
   return (
-    <section className="bg-[#F6EEE6] relative -mt-30 z-0">
+    <section
+      className="bg-[#F6EEE6] relative -mt-30 z-0"
+      style={{ backgroundImage: "url('/images/developer.png')" }}
+    >
       <div className="container mx-auto flex flex-col w-full px-3 md:px-5 lg:px-8 pt-24">
         <div className="flex flex-col justify-center items-center pt-10 gap-4 mb-24 md:mb-40">
           <div className="flex gap-3 justify-center items-center">

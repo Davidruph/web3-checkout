@@ -7,7 +7,10 @@ import Image from "next/image";
 
 const Invoicing = () => {
   return (
-    <section className="bg-[#EDECF6] relative">
+    <section
+      className="bg-[#EDECF6] relative"
+      style={{ backgroundImage: "url('/images/invoicinghero.png')" }}
+    >
       <div className="container mx-auto flex flex-col w-full px-3 md:px-5 lg:px-8 relative">
         <div className="flex flex-col lg:flex-row py-6 md:py-10 justify-between relative">
           <div className="flex flex-col gap-4 mb-40 lg:mb-0">

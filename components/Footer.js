@@ -1,3 +1,6 @@
+"use client";
+
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "../public/images/logo.svg";
 import vector from "../public/images/vector.svg";
@@ -11,6 +14,9 @@ import providers from "../public/images/providers.svg";
 import rectangle from "../public/images/rectangle.svg";
 import InvoiceCard from "./InvoiceCard";
 import FooterCard from "./FooterCard";
+import SmallFooterCard from "./SmallFooterCard";
+import tokensm from "../public/images/tokensm.svg";
+import usersm from "../public/images/usersm.svg";
 
 const footerCardContent = [
   {
@@ -39,7 +45,65 @@ const footerCardContent = [
   }
 ];
 
+const smallfooterCardContent = [
+  {
+    img: tokensm,
+    title: "Web3 startups running",
+    subtitle: "token presales",
+    borderColor: true
+  },
+  {
+    img: usersm,
+    title: "Agencies billing global ",
+    subtitle: "clients in stablecoins",
+    borderColor: true
+  },
+  {
+    img: contributors,
+    title: "DAOs paying",
+    subtitle: "contributors",
+    borderColor: false
+  },
+  {
+    img: providers,
+    title: "Freelancers and digital",
+    subtitle: "service providers worldwide",
+    borderColor: true
+  }
+];
+
 const Footer = () => {
+  const scrollRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const cardWidth = 250 + 16; // Card width + gap (adjust if different)
+
+  // Scroll handler to update active dot
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const scrollLeft = scrollRef.current.scrollLeft;
+      const index = Math.round(scrollLeft / cardWidth);
+      setActiveIndex(index);
+    }
+  };
+
+  // Scroll to a specific card when dot is clicked
+  const scrollToCard = (index) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({
+        left: index * cardWidth,
+        behavior: "smooth"
+      });
+    }
+  };
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (el) el.addEventListener("scroll", handleScroll);
+    return () => {
+      if (el) el.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <section className="container mx-auto flex flex-col w-full px-3 md:px-5 lg:px-8 mt-12 md:mt-40">
@@ -72,6 +136,37 @@ const Footer = () => {
             />
           ))}
         </div>
+
+        <div className="w-full block md:hidden">
+          <div
+            ref={scrollRef}
+            className="w-full flex gap-4 mb-10 pt-10 overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+          >
+            {smallfooterCardContent.map((card, index) => (
+              <SmallFooterCard
+                key={index}
+                img={card.img}
+                title={card.title}
+                subtitle={card.subtitle}
+                borderColor={card.borderColor}
+              />
+            ))}
+          </div>
+          <div className="flex justify-center gap-3 mb-10">
+            {smallfooterCardContent.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => scrollToCard(index)}
+                className={`h-2 w-2 border transition-all duration-300 ${
+                  activeIndex === index
+                    ? "bg-[#FF862A] scale-110 w-[27px]"
+                    : "bg-gray-400 w-[12px]"
+                }`}
+              ></button>
+            ))}
+          </div>
+        </div>
+
         <InvoiceCard />
         <div className="w-full justify-center md:justify-between gap-5 md:gap-0 flex flex-col md:flex-row items-center py-8">
           <p className="font-[var(--font-axiforma)] copyright-text">

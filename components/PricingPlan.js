@@ -9,6 +9,8 @@ import tickpro from "../public/images/tick-pro.svg";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Button } from "./ui/button";
 import prosm from "../public/images/pro-sm.svg";
+import recommend from "../public/images/recommend.svg";
+import recommendsm from "../public/images/recommendsm.svg";
 
 const PricingPlan = () => {
   return (
@@ -35,7 +37,7 @@ const PricingPlan = () => {
       </div>
 
       <div className="mb-5 relative z-1 w-full flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center pt-10 px-3 md:px-5 lg:px-8">
-        <div className="flex flex-col justify-center border rounded-[20px] w-full max-w-[500px] p-3 md:p-5 bg-white">
+        <div className="flex flex-col justify-center border rounded-[20px] w-full max-w-[500px] p-3 md:p-5 bg-white shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
           <div
             className="hidden md:flex flex-col gap-3 justify-center items-center"
             alt="free"
@@ -105,7 +107,15 @@ const PricingPlan = () => {
           </button>
         </div>
 
-        <div className="flex flex-col justify-center border rounded-[20px] w-full max-w-[500px] p-3 md:p-5 bg-white">
+        <div className="flex flex-col justify-center border rounded-[20px] w-full max-w-[500px] p-3 md:p-5 bg-white shadow-[6px_6px_0px_rgba(0,0,0,0.1)] relative">
+          <div className="absolute top-1 md:top-5 -left-3 md:-left-4">
+            <Image src={recommend} alt="recommend" className="hidden md:flex" />
+            <Image
+              src={recommendsm}
+              alt="recommend"
+              className="flex md:hidden"
+            />
+          </div>
           <div
             className="hidden md:flex flex-col gap-3 justify-center items-center"
             alt="free"
@@ -121,7 +131,7 @@ const PricingPlan = () => {
             </div>
           </div>
 
-          <div className="flex gap-3 md:hidden justify-center items-center">
+          <div className="flex mt-10 gap-3 md:hidden justify-center items-center">
             <Image src={prosm} alt="pro" />
             <div>
               <p className="pricing-tag mb-3">
