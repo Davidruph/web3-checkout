@@ -127,12 +127,234 @@
   background-color: #fdf8f3;
 }
 
-.primary-border {
-  @apply border-5 border-solid;
+/* .primary-border {
   border-image-source: linear-gradient(
     308.69deg,
     #ff8629 63.74%,
     #ffd729 92.78%
-  );
-  border-image-slice: 1;
+  ) !important;
+  border-image-slice: 1 !important;
+  border-radius: 100px !important;
+} */
+
+.copyright-text {
+  font-weight: 400;
+  line-height: 164%;
+  color: #000;
+  font-size: 12px;
+}
+.invoice-card {
+  border: Mixed solid #00000042;
+}
+.invoice-heading {
+  font-family: Axiforma;
+  font-weight: 300;
+  /* font-style: light; */
+  line-height: 112.99999999999999%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.invoice-time {
+  font-family: Axiforma;
+  font-weight: 600;
+  /* font-style: SemiBold; */
+  line-height: 112.99999999999999%;
+  text-align: center;
+}
+.invoice-cta {
+  width: 296px;
+  height: 48px;
+  background-color: #000;
+  opacity: 1;
+  color: #fff;
+  gap: 10px;
+  border-radius: 100px !important;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  font-family: Axiforma;
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.invoice-description {
+  font-family: Axiforma;
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.invoice-kyc {
+  font-family: Axiforma;
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.span-kyc {
+  font-family: Axiforma;
+  font-weight: 700;
+  /* font-style: Bold; */
+  font-size: 14px;
+  line-height: 155%;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.footer-card-title {
+  font-family: Axiforma;
+  font-weight: 250;
+  /* font-style: Thin; */
+  line-height: 161%;
+  text-transform: capitalize;
+}
+.footer-card-subtitle {
+  font-family: Axiforma;
+  font-weight: 700;
+  /* font-style: Bold; */
+  line-height: 161%;
+  text-transform: capitalize;
+}
+.section-tag {
+  font-family: Axiforma;
+  font-weight: 500;
+  /* font-style: Medium; */
+  font-size: 14px;
+  line-height: 100%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.people-question {
+  font-family: Axiforma;
+  font-weight: 250;
+  /* font-style: Thin; */
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.people-question-highlight {
+  font-family: Axiforma;
+  font-weight: 700;
+  /* font-style: Bold; */
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.people-description {
+  font-family: Axiforma;
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 14px;
+  line-height: 195%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.why-card-title {
+  font-family: Axiforma;
+  font-weight: 700;
+  /* font-style: Bold; */
+  font-size: 22px;
+  line-height: 124%;
+  text-transform: capitalize;
+}
+.why-card-span {
+  font-family: Axiforma;
+  font-weight: 300;
+  /* font-style: Light; */
+  font-size: 22px;
+  line-height: 124%;
+  text-transform: capitalize;
+}
+.why-card-subtitle {
+  font-family: Axiforma;
+  font-weight: 400;
+  /* font-style: normal; */
+  font-size: 16px;
+  line-height: 197%;
+  text-transform: capitalize;
+}
+.small-why-card-title {
+  font-family: Axiforma;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 124%;
+  text-transform: capitalize;
+}
+.small-why-card-span {
+  font-family: Axiforma;
+  font-weight: 300;
+  font-size: 17px !important;
+  line-height: 124%;
+  text-transform: capitalize;
+}
+.small-why-card-subtitle {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 197%;
+  text-transform: capitalize;
+}
+.why-topic {
+  font-family: Axiforma;
+  font-weight: 250;
+  /* font-style: Thin; */
+  line-height: 120%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.why-main {
+  font-family: Axiforma;
+  font-weight: 700;
+  /* font-style: Bold; */
+  line-height: 120%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.invoice-title {
+  font-family: Axiforma;
+  font-weight: 700;
+  line-height: 120%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.invoice-span {
+  font-family: Axiforma;
+  font-weight: 250;
+  line-height: 120%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.invoice-top-description {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 195%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.invoice-points {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 141%;
+  text-align: center;
 }
