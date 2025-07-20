@@ -358,3 +358,63 @@
   line-height: 141%;
   text-align: center;
 }
+.pricing-title {
+  font-family: Axiforma;
+  font-weight: 600;
+  line-height: 108%;
+  text-align: center;
+}
+.pricing-tag {
+  font-family: Axiforma;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 108%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.pricing-feature {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 164%;
+  color: #171717;
+}
+.pricing-btn-1 {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #4884f1;
+  height: 62;
+  gap: 10px;
+  opacity: 1;
+  border-width: 1px;
+  border-radius: 100px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  background: #0090ff1a;
+}
+.pricing-btn-2 {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #fff;
+  height: 62;
+  gap: 10px;
+  opacity: 1;
+  border-width: 1px;
+  border-radius: 100px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+}
