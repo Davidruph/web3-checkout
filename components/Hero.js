@@ -1,0 +1,61 @@
+import Image from "next/image";
+import rectangle from "../public/images/rectangle.svg";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { Button } from "./ui/button";
+import bigimg from "../public/images/bigimg.svg";
+import smallimg from "../public/images/smallimg.svg";
+
+const Hero = () => {
+  return (
+    <>
+      <div className="relative w-full pt-8 pb-40 md:pb-52 flex flex-col items-center gap-6">
+        {/* Tag */}
+        <div className="flex gap-3 justify-center md:justify-start items-center">
+          <Image src={rectangle} alt="Rectangle" />
+          <p className="section-tag">Crypto</p>
+          <Image src={rectangle} alt="Rectangle" />
+        </div>
+
+        {/* Heading */}
+        <p className="hero-intro text-[32px] md:text-[48px] text-center">
+          <span className="hero-highlight">Seamless</span> Crypto Invoicing{" "}
+          <br className="hidden md:block" /> for Modern{" "}
+          <span className="hero-highlight">Businesses</span>
+        </p>
+
+        {/* Description */}
+        <p className="hero-desc text-center px-4 max-w-3xl">
+          Collect, manage, and track crypto payments — effortlessly. From
+          freelancers to global teams, <br className="hidden md:block" />
+          Web3Checkout makes crypto billing professional, compliant, and easy.
+        </p>
+
+        {/* CTA */}
+        <div className="flex gap-6 flex-row items-center justify-center mt-4 pb-40 md:pb-80">
+          <div className="cursor-pointer relative inline-block rounded-full p-[5px] bg-gradient-to-br from-[#FFD729] to-[#FF8629]">
+            <Button className="pricing-btn-2 w-full cursor-pointer">
+              Get Started <MdKeyboardArrowRight size={24} />
+            </Button>
+          </div>
+          <button className="border-0 bg-transparent w-full cursor-pointer learn">
+            Learn more
+          </button>
+        </div>
+      </div>
+      <div className="hidden md:flex absolute bottom-0 left-0 w-full justify-center items-center z-0 px-0 md:px-10">
+        <Image
+          src={bigimg}
+          alt="Big Hero Image"
+          className="w-full max-w-[1267px] h-auto object-cover"
+        />
+      </div>
+
+      {/* Small Image for mobile (bottom-right) */}
+      <div className="block md:hidden absolute bottom-0 right-4">
+        <Image src={smallimg} alt="Small Hero Image" />
+      </div>
+    </>
+  );
+};
+
+export default Hero;

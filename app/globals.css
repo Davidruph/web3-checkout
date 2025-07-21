@@ -160,7 +160,7 @@
   text-align: center;
 }
 .invoice-cta {
-  width: 296px;
+  /* width: 296px; */
   height: 48px;
   background-color: #000;
   opacity: 1;
@@ -415,4 +415,179 @@
   padding-right: 32px;
   padding-bottom: 16px;
   padding-left: 32px;
+}
+.navlinks {
+  font-family: Axiforma;
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.nav-box {
+  padding-top: 12px;
+  padding-right: 26px;
+  padding-bottom: 12px;
+  padding-left: 26px;
+  /* gap: 10px; */
+}
+.hero-intro {
+  font-family: Axiforma;
+  font-weight: 250;
+  line-height: 140%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.hero-highlight {
+  font-family: Axiforma;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.hero-desc {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 195%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.learn {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.generate_invoice_text {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 195%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.intro-invoice {
+  font-family: Axiforma;
+  font-weight: 250;
+  line-height: 130%;
+  text-transform: capitalize;
+}
+.invoice_try_btn {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.invoice_label {
+  font-family: Axiforma !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 100%;
+  text-transform: uppercase !important;
+}
+.label-input {
+  height: 66px !important;
+  opacity: 1;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-width: 1px;
+  font-size: 16px !important;
+}
+.generate-btn {
+  height: 56px;
+  opacity: 1;
+  border-radius: 100px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  gap: 10px;
+  border-width: 1px;
+  background: linear-gradient(97.33deg, #ff8629 59.15%, #ffd729 138.2%);
+
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.modal-text {
+  font-family: Axiforma;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+.modal-label {
+  font-family: Axiforma;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #000;
+}
+input::placeholder {
+  font-family: Axiforma;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+.modal-input {
+  height: 66px !important;
+  opacity: 1;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-width: 1px;
+  font-size: 16px !important;
+}
+.modal-inp {
+  height: 66px !important;
+  opacity: 1;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  border-width: 1px;
+  font-size: 20px !important;
+}
+.invoice-ctaaa {
+  /* width: 296px; */
+  height: 48px;
+  background-color: #000;
+  opacity: 1;
+  color: #fff;
+  gap: 10px;
+  border-radius: 100px !important;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  font-family: Axiforma;
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
 }

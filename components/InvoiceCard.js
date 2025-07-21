@@ -22,8 +22,8 @@ const InvoiceCard = () => {
           freelancers to global teams, Web3Checkout
         </p>
 
-        <div className="relative inline-block rounded-full p-[5px] bg-gradient-to-br from-[#FFD729] to-[#FF8629]">
-          <Button className="invoice-cta">
+        <div className="relative inline-block rounded-full p-[5px] bg-gradient-to-br from-[#FFD729] to-[#FF8629] w-auto">
+          <Button className="invoice-ctaaa w-[245px]">
             Create a Free Invoice <MdKeyboardArrowRight size={24} />
           </Button>
         </div>
