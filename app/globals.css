@@ -591,3 +591,28 @@ input::placeholder {
   vertical-align: middle;
   text-transform: capitalize;
 }
+.gen-box {
+  /* height: 48; */
+  opacity: 1;
+  gap: 10px;
+  border-radius: 13px;
+  padding: 10px;
+}
+
+.gen-text {
+  font-family: Axiforma;
+  font-weight: 250;
+  font-size: 16px;
+  line-height: 172%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.gen-highlight {
+  font-family: Axiforma;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 172%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}

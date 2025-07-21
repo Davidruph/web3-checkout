@@ -7,10 +7,14 @@ import vector from "../public/images/vector.svg";
 import x from "../public/images/x.svg";
 import discord from "../public/images/discord.svg";
 import Link from "next/link";
-import tokens from "../public/images/tokens.svg";
-import clients from "../public/images/users.svg";
-import contributors from "../public/images/contributors.svg";
-import providers from "../public/images/providers.svg";
+import tokensDark from "../public/images/tokens.svg";
+import tokensLight from "../public/images/tokensLight.svg";
+import clientsDark from "../public/images/users.svg";
+import clientsLight from "../public/images/clientsLight.svg";
+import contributorsLight from "../public/images/contributors.svg";
+import providersDark from "../public/images/providers.svg";
+import providersLight from "../public/images/providersLight.svg";
+
 import rectangle from "../public/images/rectangle.svg";
 import InvoiceCard from "./InvoiceCard";
 import FooterCard from "./FooterCard";
@@ -20,52 +24,52 @@ import usersm from "../public/images/usersm.svg";
 
 const footerCardContent = [
   {
-    img: tokens,
+    imgLight: tokensLight,
+    imgDark: tokensDark,
     title: "Web3 startups running",
-    subtitle: "token presales",
-    borderColor: true
+    subtitle: "token presales"
   },
   {
-    img: clients,
+    imgLight: clientsLight,
+    imgDark: clientsDark,
     title: "Agencies billing global ",
-    subtitle: "clients in stablecoins",
-    borderColor: true
+    subtitle: "clients in stablecoins"
   },
   {
-    img: contributors,
+    imgLight: contributorsLight,
+    imgDark: contributorsLight,
     title: "DAOs paying",
-    subtitle: "contributors",
-    borderColor: false
+    subtitle: "contributors"
   },
   {
-    img: providers,
+    imgLight: providersLight,
+    imgDark: providersDark,
     title: "Freelancers and digital",
-    subtitle: "service providers worldwide",
-    borderColor: true
+    subtitle: "service providers worldwide"
   }
 ];
 
 const smallfooterCardContent = [
   {
-    img: tokensm,
+    img: tokensLight,
     title: "Web3 startups running",
     subtitle: "token presales",
     borderColor: true
   },
   {
-    img: usersm,
+    img: clientsLight,
     title: "Agencies billing global ",
     subtitle: "clients in stablecoins",
     borderColor: true
   },
   {
-    img: contributors,
+    img: contributorsLight,
     title: "DAOs paying",
     subtitle: "contributors",
     borderColor: false
   },
   {
-    img: providers,
+    img: providersLight,
     title: "Freelancers and digital",
     subtitle: "service providers worldwide",
     borderColor: true
@@ -129,10 +133,10 @@ const Footer = () => {
           {footerCardContent.map((card, index) => (
             <FooterCard
               key={index}
-              img={card.img}
+              imgLight={card.imgLight}
+              imgDark={card.imgDark}
               title={card.title}
               subtitle={card.subtitle}
-              borderColor={card.borderColor}
             />
           ))}
         </div>
