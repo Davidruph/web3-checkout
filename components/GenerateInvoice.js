@@ -32,7 +32,7 @@ const GenerateInvoice = () => {
   return (
     <>
       <section>
-        <div className="flex flex-col w-full px-3 py-20">
+        <div className="flex flex-col w-full lg:w-[95%] mx-auto px-3 py-20">
           <div className="w-full flex flex-col md:flex-row justify-center gap-4 md:gap-2 md:justify-between">
             <div className="w-full flex flex-col justify-start gap-5">
               <div className="flex gap-3 justify-center md:justify-start items-center">
@@ -259,7 +259,7 @@ const GenerateInvoice = () => {
                 </div>
               </div>
 
-              <div className="bg-white z-99 w-full max-w-[680px] rounded-[20px] border border-[#c2bcba] p-5 shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
+              <div className="bg-white z-50 w-full max-w-[680px] rounded-[20px] border border-[#c2bcba] p-5 shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
                 <p className="intro-invoice text-[24px] md:text-[32px] text-center md:text-start">
                   <span className="hero-highlight">Invoice </span>
                   Generator

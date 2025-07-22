@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
 
       <div className="block md:hidden absolute bottom-0 right-4 z-0">
-        <Image src={smallimg} alt="Small Hero Image" />
+        <Image src={smallimg} alt="Small Hero Image" className="border border-red-500" />
       </div>
     </>
   );

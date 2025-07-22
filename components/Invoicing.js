@@ -8,11 +8,11 @@ import Image from "next/image";
 const Invoicing = () => {
   return (
     <section
-      className="bg-[#EDECF6] relative"
+      className="bg-[#EDECF6] relative lg:py-5 lg:h-[80vh] md:h-[47vh] h-[80vh]"
       style={{ backgroundImage: "url('/images/invoicinghero.png')" }}
     >
       <div className="flex flex-col w-full px-3 relative">
-        <div className="flex flex-col lg:flex-row py-6 md:py-10 justify-between relative">
+        <div className="flex flex-col lg:pl-10 lg:flex-row py-6 md:py-10 justify-between relative">
           <div className="flex flex-col gap-4 mb-40 lg:mb-0">
             <div className="flex gap-3 justify-center md:justify-start items-center">
               <Image src={rectangle} alt="Rectangle" />
@@ -58,7 +58,7 @@ const Invoicing = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex absolute right-0 py-15 w-full md:w-1/2">
+        <div className="hidden md:flex absolute lg:top-0 md:top-44 top-0 right-0 py-15 w-full md:w-1/2">
           <Image src={invoice} alt="Invoice" />
         </div>
 

@@ -32,10 +32,10 @@ const Nav = () => {
   return (
     <>
       {/* Desktop Nav */}
-      <div className="hidden w-full justify-center md:justify-between gap-5 md:gap-0 md:flex flex-col md:flex-row items-center pt-8">
+      <div className="hidden w-full lg:w-[95%] mx-auto justify-center md:justify-between gap-5 md:gap-0 md:flex flex-col md:flex-row items-center pt-8">
         <Image src={logo} alt="Logo" />
 
-        <div className="hidden md:flex nav-box w-[510px] h-[62px] rounded-[62px] justify-around items-center bg-white shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
+        <div className="hidden md:flex nav-box lg:w-[510px] md:w-[400px] h-[62px] rounded-[62px] justify-around items-center bg-white shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
           {menus.map((menu, index) => (
             <div key={index} className="relative group">
               {!menu.dropdown ? (
@@ -80,7 +80,7 @@ const Nav = () => {
           ))}
         </div>
 
-        <div className="social-icons flex gap-10 justify-center items-center">
+        <div className="social-icons flex gap-10 lg:gap-10 md:gap-6 justify-center items-center">
           <Link href="#" className="social-icon">
             <Image src={vector} alt="vector" />
           </Link>

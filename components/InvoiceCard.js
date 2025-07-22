@@ -6,7 +6,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const InvoiceCard = () => {
   return (
     <Card
-      className="bg-[#CECDE0] shadow-none border-0 bg-no-repeat bg-cover bg-blend-normal"
+      className="bg-[#CECDE0] shadow-none border-0 bg-no-repeat bg-cover bg-blend-normal lg:w-[95%] mx-auto"
       style={{ backgroundImage: "url('/images/invoicebg.svg')" }}
     >
       <CardContent className="flex flex-col items-center lg:py-5 justify-center gap-5">

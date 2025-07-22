@@ -174,7 +174,7 @@ const Footer = () => {
         </div>
 
         <InvoiceCard />
-        <div className="w-full justify-center md:justify-between gap-5 md:gap-0 flex flex-col md:flex-row items-center py-8">
+        <div className="w-full  lg:w-[95%] mx-auto justify-center md:justify-between gap-5 md:gap-0 flex flex-col md:flex-row items-center py-8">
           <p className="font-[var(--font-axiforma)] copyright-text">
             Copyright © 2022. All rights reserved
           </p>
