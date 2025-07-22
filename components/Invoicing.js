@@ -11,7 +11,7 @@ const Invoicing = () => {
       className="bg-[#EDECF6] relative"
       style={{ backgroundImage: "url('/images/invoicinghero.png')" }}
     >
-      <div className="container mx-auto flex flex-col w-full px-2 lg:px-5 relative">
+      <div className="flex flex-col w-full px-3 relative">
         <div className="flex flex-col lg:flex-row py-6 md:py-10 justify-between relative">
           <div className="flex flex-col gap-4 mb-40 lg:mb-0">
             <div className="flex gap-3 justify-center md:justify-start items-center">

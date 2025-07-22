@@ -32,7 +32,7 @@ const GenerateInvoice = () => {
   return (
     <>
       <section>
-        <div className="container mx-auto flex flex-col w-full px-3 lg:px-5 py-20">
+        <div className="flex flex-col w-full px-3 py-20">
           <div className="w-full flex flex-col md:flex-row justify-center gap-4 md:gap-2 md:justify-between">
             <div className="w-full flex flex-col justify-start gap-5">
               <div className="flex gap-3 justify-center md:justify-start items-center">

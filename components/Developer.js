@@ -9,7 +9,7 @@ const Developer = () => {
       className="bg-[#F6EEE6] relative -mt-30 z-0 "
       style={{ backgroundImage: "url('/images/developer.png')" }}
     >
-      <div className="container mx-auto flex flex-col w-full px-3 lg:px-5 pt-24">
+      <div className="flex flex-col w-full px-3 pt-24">
         <div className="flex flex-col justify-center items-center pt-10 gap-8 mb-24 md:mb-40">
           <div className="flex gap-3 justify-center items-center">
             <Image src={rectangle} alt="Rectangle" />

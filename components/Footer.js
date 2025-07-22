@@ -110,7 +110,7 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <section className="container mx-auto flex flex-col w-full px-3 lg:px-5 mt-12 md:mt-40">
+      <section className="flex flex-col w-full px-3 mt-12 md:mt-40">
         <div className="flex flex-col justify-center items-center pt-10 mb-5 gap-4">
           <div className="flex gap-3 justify-center items-center">
             <Image src={rectangle} alt="Rectangle" />

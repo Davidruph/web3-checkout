@@ -11,7 +11,7 @@ import logo from "../public/images/logo.svg";
 
 const Why = () => {
   return (
-    <section className="container mx-auto flex flex-col w-full px-3 lg:px-5">
+    <section className="flex flex-col w-full px-3 lg:px-5">
       <div className="flex flex-col mb-5 gap-4 items-center justify-center mt-10">
         <Image src={logo} alt="logo" />
         <p className="why-topic text-[32px] lg:text-[48px]">
