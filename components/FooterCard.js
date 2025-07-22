@@ -2,48 +2,48 @@ import Image from "next/image";
 
 const FooterCard = ({ imgLight, imgDark, title, subtitle }) => {
   return (
-    <div className="group relative inline-block w-auto rounded-[20px] transition-all duration-300">
-      {/* Outer Border Layer */}
+    <div className="group relative w-[316px] h-[325px] rounded-[20px] transition-all duration-300">
+      {/* Gradient border wrapper - appears on hover */}
       <div
         className={`
-          p-[3px] rounded-[20px]
-          bg-[linear-gradient(308.69deg,#FF8629_63.74%,#FFD729_92.78%)]
-          group-hover:bg-transparent
-          border border-transparent group-hover:border-gray-400
+          p-[3px] rounded-[20px] h-full w-full
+          bg-gray-300 group-hover:bg-[linear-gradient(308.69deg,#FF8629_63.74%,#FFD729_92.78%)]
           transition-all duration-300
         `}
       >
-        {/* Inner Card */}
+        {/* Inner content card */}
         <div
           className={`
+            bg-white group-hover:bg-black
             rounded-[15px] w-full h-full p-4
-            bg-black group-hover:bg-white
             transition-colors duration-300
+            flex flex-col justify-between
           `}
         >
           {/* Image Layer */}
-          <div className="w-full flex justify-center pt-5 relative h-[100px]">
+          <div className="w-full flex justify-center pt-10 relative">
             <Image
-              src={imgDark || "/placeholder.svg"}
+              src={imgLight || "/placeholder.svg"}
               alt={title}
               width={100}
               height={100}
               className="block group-hover:hidden transition-opacity duration-300"
             />
             <Image
-              src={imgLight || "/placeholder.svg"}
+              src={imgDark || "/placeholder.svg"}
               alt={title}
               width={100}
               height={100}
-              className="hidden group-hover:block transition-opacity duration-300 absolute top-0 left-1/2 -translate-x-1/2"
+              className="hidden group-hover:block transition-opacity duration-300"
             />
           </div>
+
           {/* Text Content */}
-          <div className="w-full flex flex-col justify-start items-start footer-card-content text-center pt-10">
-            <h3 className="footer-card-title text-[12px] lg:text-[19px] font-semibold text-white group-hover:text-black transition-colors duration-300">
+          <div className="w-full flex flex-col justify-start pt-6 text-black group-hover:text-white transition-colors duration-300">
+            <h3 className="footer-card-title text-[12px] lg:text-[19px] font-semibold">
               {title}
             </h3>
-            <p className="footer-card-subtitle text-[12px] lg:text-[19px] text-white group-hover:text-black transition-colors duration-300">
+            <p className="footer-card-subtitle text-[12px] lg:text-[19px]">
               {subtitle}
             </p>
           </div>

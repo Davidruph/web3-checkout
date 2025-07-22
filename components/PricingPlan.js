@@ -15,7 +15,7 @@ import recommendsm from "../public/images/recommendsm.svg";
 const PricingPlan = () => {
   return (
     <section className="z-99 mt-64 lg:mt-40 relative">
-      <div className="container mx-auto flex flex-col w-full px-3 md:px-5 lg:px-8">
+      <div className="container mx-auto flex flex-col w-full px-3 lg:px-5">
         <div className="flex flex-col justify-center items-center pt-10 mb-5 gap-4">
           <div className="flex gap-3 justify-center items-center">
             <Image src={rectangle} alt="Rectangle" />
@@ -36,7 +36,7 @@ const PricingPlan = () => {
         </div>
       </div>
 
-      <div className="mb-5 relative z-1 w-full flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center pt-10 px-3 md:px-5 lg:px-8">
+      <div className="mb-5 relative z-1 w-full flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center pt-10 px-3 lg:px-5">
         <div className="flex flex-col justify-center border rounded-[20px] w-full max-w-[500px] p-3 md:p-5 bg-white shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
           <div
             className="hidden md:flex flex-col gap-3 justify-center items-center"

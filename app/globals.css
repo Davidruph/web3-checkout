@@ -616,3 +616,13 @@ input::placeholder {
   vertical-align: middle;
   text-transform: capitalize;
 }
+.demo-text {
+  font-family: Axiforma;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #000;
+}

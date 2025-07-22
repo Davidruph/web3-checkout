@@ -32,7 +32,7 @@ const Nav = () => {
   return (
     <>
       {/* Desktop Nav */}
-      <div className="hidden w-full justify-center md:justify-between gap-5 md:gap-0 md:flex flex-col md:flex-row items-center py-6">
+      <div className="hidden w-full justify-center md:justify-between gap-5 md:gap-0 md:flex flex-col md:flex-row items-center pt-8">
         <Image src={logo} alt="Logo" />
 
         <div className="hidden md:flex nav-box w-[510px] h-[62px] rounded-[62px] justify-around items-center bg-white shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">

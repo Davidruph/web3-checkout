@@ -42,16 +42,8 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="hidden md:flex absolute bottom-0 left-0 w-full justify-center items-center z-0 px-0 md:px-10">
-        <Image
-          src={bigimg}
-          alt="Big Hero Image"
-          className="w-full max-w-[1267px] h-auto object-cover"
-        />
-      </div>
 
-      {/* Small Image for mobile (bottom-right) */}
-      <div className="block md:hidden absolute bottom-0 right-4">
+      <div className="block md:hidden absolute bottom-0 right-4 z-0">
         <Image src={smallimg} alt="Small Hero Image" />
       </div>
     </>
