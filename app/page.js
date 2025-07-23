@@ -23,12 +23,12 @@ export default function Home() {
     bg-cover
     relative
     z-10
-    bg-[url('/images/hero.svg')] 
+    bg-none 
     md:bg-[url('/images/allbg.svg')]
     -pt-10
   `}
       >
-        <div className="flex flex-col w-full px-3 relative z-20 pb-20">
+        <div className="flex flex-col w-full lg:px-3 relative z-20 pb-20">
           <Hero />
         </div>
       </section>
